@@ -47,6 +47,7 @@ namespace AutoBrowseWeb
                     proxy.FtpProxy = PROXY;
                     proxy.SslProxy = PROXY;
                     profile.SetProxyPreferences(proxy);
+
                     driver0 = new FirefoxDriver(profile);
                     driver2 = new FirefoxDriver(profile);
                     driver1 = new FirefoxDriver(profile);
@@ -56,16 +57,25 @@ namespace AutoBrowseWeb
                     driver0.Navigate().GoToUrl(thisPage);
                     driver0.Close();
 
- 
-                    thisCate = allCate[rnd1.Next(allCate.Length)];
-                    driver1.Navigate().GoToUrl(thisCate);
-                    driver1.Close();
-                    thisCate = allCate[rnd1.Next(allCate.Length)];
-                    driver2.Navigate().GoToUrl(thisCate);
-                    driver2.Close();
-                    thisCate = allCate[rnd1.Next(allCate.Length)];
-                    driver3.Navigate().GoToUrl(thisCate);
-                    driver3.Close();
+
+                    Thread.Sleep(1000);
+                    {
+                        thisCate = allCate[rnd1.Next(allCate.Length)];
+                        driver1.Navigate().GoToUrl(thisCate);
+                        driver1.Close();
+                    }
+                    Thread.Sleep(2000);
+                    {
+                        thisCate = allCate[rnd1.Next(allCate.Length)];
+                        driver2.Navigate().GoToUrl(thisCate);
+                        driver2.Close();
+                    }
+                    Thread.Sleep(4000);
+                    {
+                        thisCate = allCate[rnd1.Next(allCate.Length)];
+                        driver3.Navigate().GoToUrl(thisCate);
+                        driver3.Close();
+                    }
 
 
 
