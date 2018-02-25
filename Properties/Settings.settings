@@ -1,0 +1,21 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="AutoBrowseWeb.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="page" Type="System.String" Scope="User">
+      <Value Profile="(Default)">page.txt</Value>
+    </Setting>
+    <Setting Name="cate" Type="System.String" Scope="User">
+      <Value Profile="(Default)">pcategories.txt</Value>
+    </Setting>
+    <Setting Name="proxytime" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="times" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="proxies" Type="System.String" Scope="User">
+      <Value Profile="(Default)">proxies.txt</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
