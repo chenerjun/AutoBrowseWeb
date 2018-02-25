@@ -36,8 +36,8 @@ namespace AutoBrowseWeb
             FirefoxDriver driver, driver0, driver2, driver1, driver3;
 
             OpenQA.Selenium.Proxy proxy = new OpenQA.Selenium.Proxy();
-
-
+            var timespan = TimeSpan.FromSeconds(60);
+            var binary = new FirefoxBinary();
             while (true)
             {
 
@@ -53,7 +53,7 @@ namespace AutoBrowseWeb
                       // look at a category 
                     {
                         thisCate = allCate[rnd1.Next(allCate.Length)];
-                        driver1 = new FirefoxDriver(profile);
+                        driver1 = new FirefoxDriver(binary, profile, timespan);
                         driver1.Manage().Window.Size = new Size(300, 200);
                         driver1.Navigate().GoToUrl(thisCate);
                         driver1.Close();
@@ -62,7 +62,7 @@ namespace AutoBrowseWeb
                     Thread.Sleep(2000); // then look at a page
                     {
                         thisPage = allweb[rnd1.Next(allweb.Length)];
-                        driver = new FirefoxDriver(profile);
+                        driver = new FirefoxDriver(binary, profile, timespan);
                         driver.Manage().Window.Size = new Size(300, 200);
                         driver.Navigate().GoToUrl(thisPage);
                         driver.Close();
@@ -70,7 +70,7 @@ namespace AutoBrowseWeb
                     Thread.Sleep(8000); // and then back to a category
                     {
                         thisCate = allCate[rnd1.Next(allCate.Length)];
-                        driver2 = new FirefoxDriver(profile);
+                        driver2 = new FirefoxDriver(binary, profile, timespan);
                         driver2.Manage().Window.Size = new Size(300, 200);
                         driver2.Navigate().GoToUrl(thisCate);
                         driver2.Close();
@@ -78,7 +78,7 @@ namespace AutoBrowseWeb
                     Thread.Sleep(3000);// and then back to a category again 
                     {
                         thisCate = allCate[rnd1.Next(allCate.Length)];
-                        driver3 = new FirefoxDriver(profile);
+                        driver3 = new FirefoxDriver(binary, profile, timespan);
                         driver3.Manage().Window.Size = new Size(300, 200);
                         driver3.Navigate().GoToUrl(thisCate);
                         driver3.Close();
@@ -87,7 +87,7 @@ namespace AutoBrowseWeb
                     Thread.Sleep(10000); // finally look at one more page
                     {
                         thisPage = allweb[rnd1.Next(allweb.Length)];
-                        driver0 = new FirefoxDriver(profile);
+                        driver0 = new FirefoxDriver(binary, profile, timespan);
                         driver0.Manage().Window.Size = new Size(300, 200);
                         driver0.Navigate().GoToUrl(thisPage);
                         driver0.Close();
