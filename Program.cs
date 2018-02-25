@@ -51,20 +51,24 @@ namespace AutoBrowseWeb
 
 
                     driver  = new FirefoxDriver(profile);
-                    driver0 = new FirefoxDriver(profile);
-                    driver2 = new FirefoxDriver(profile);
-                    driver1 = new FirefoxDriver(profile);
-                    driver3 = new FirefoxDriver(profile);
+                    driver.Manage().Window.Size = new Size(300, 200);
 
-                    driver .Manage().Window.Size = new Size(300, 200);
+                    driver0 = new FirefoxDriver(profile);
                     driver0.Manage().Window.Size = new Size(300, 200);
-                    driver2.Manage().Window.Size = new Size(300, 200);
+
+
+                    driver1 = new FirefoxDriver(profile);
                     driver1.Manage().Window.Size = new Size(300, 200);
+
+                    driver2 = new FirefoxDriver(profile);
+                    driver2.Manage().Window.Size = new Size(300, 200);
+
+                    driver3 = new FirefoxDriver(profile);
                     driver3.Manage().Window.Size = new Size(300, 200);
 
           
 
-
+                    //each proxy browe 3 categories and 2 webpages
                       // look at a category 
                     {
                         thisCate = allCate[rnd1.Next(allCate.Length)];
