@@ -33,7 +33,7 @@ namespace AutoBrowseWeb
 
             //Code copied from the above linkss
             FirefoxProfile profile = new FirefoxProfile();
-            FirefoxDriver driver1, driver2;
+            FirefoxDriver driver0, driver2, driver1, driver3;
             OpenQA.Selenium.Proxy proxy = new OpenQA.Selenium.Proxy();
 
 
@@ -47,46 +47,32 @@ namespace AutoBrowseWeb
                     proxy.FtpProxy = PROXY;
                     proxy.SslProxy = PROXY;
                     profile.SetProxyPreferences(proxy);
-                    driver1 = new FirefoxDriver(profile);
+                    driver0 = new FirefoxDriver(profile);
                     driver2 = new FirefoxDriver(profile);
-
+                    driver1 = new FirefoxDriver(profile);
+                    driver3 = new FirefoxDriver(profile);
 
                     thisPage = allweb[rnd1.Next(allweb.Length)];
-                    driver1.Navigate().GoToUrl(thisPage);
+                    driver0.Navigate().GoToUrl(thisPage);
+                    driver0.Close();
+
+ 
+                    thisCate = allCate[rnd1.Next(allCate.Length)];
+                    driver1.Navigate().GoToUrl(thisCate);
                     driver1.Close();
+                    thisCate = allCate[rnd1.Next(allCate.Length)];
+                    driver2.Navigate().GoToUrl(thisCate);
+                    driver2.Close();
+                    thisCate = allCate[rnd1.Next(allCate.Length)];
+                    driver3.Navigate().GoToUrl(thisCate);
+                    driver3.Close();
 
-                    for (int i = 1; i<4; i++)
-                    {
-                        thisCate = allCate[rnd1.Next(allCate.Length)];
-                        driver2.Navigate().GoToUrl(thisCate);
-                        driver2.Close();
-                    }
 
-              
+
                 };
             }
 
         }
-
-        //static void MyProxy()
-        //{
-        //    PROXY = allproxy[rnd1.Next(allproxy.Length)];
-        //    proxy.HttpProxy = PROXY;
-        //    proxy.FtpProxy = PROXY;
-        //    proxy.SslProxy = PROXY;
-        //    profile.SetProxyPreferences(proxy);
-        //    driver = new FirefoxDriver(profile);
-        //}
-
-        //static void MyPage()
-        //{
-        //    thisPage = allweb[rnd1.Next(allweb.Length)];
-        //    thisCate = allCate[rnd1.Next(allCate.Length)];
-        //    driver.Navigate().GoToUrl(thisPage);
-        //    driver.Navigate().GoToUrl(thisCate);
-        //    driver.Close();
-        //}
- 
 
     }
 }
