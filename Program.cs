@@ -51,17 +51,17 @@ namespace AutoBrowseWeb
                     driver2 = new FirefoxDriver(profile);
 
 
-                   
-
-
                     thisPage = allweb[rnd1.Next(allweb.Length)];
                     driver1.Navigate().GoToUrl(thisPage);
                     driver1.Close();
 
+                    for (int i = 1; i<4; i++)
+                    {
+                        thisCate = allCate[rnd1.Next(allCate.Length)];
+                        driver2.Navigate().GoToUrl(thisCate);
+                        driver2.Close();
+                    }
 
-                  thisCate = allCate[rnd1.Next(allCate.Length)];
-                    driver2.Navigate().GoToUrl(thisCate);
-                    driver2.Close();
               
                 };
             }
