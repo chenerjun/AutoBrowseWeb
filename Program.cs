@@ -49,29 +49,12 @@ namespace AutoBrowseWeb
                     proxy.SslProxy = PROXY;
                     profile.SetProxyPreferences(proxy);
 
-
-                    driver  = new FirefoxDriver(profile);
-                    driver.Manage().Window.Size = new Size(300, 200);
-
-                    driver0 = new FirefoxDriver(profile);
-                    driver0.Manage().Window.Size = new Size(300, 200);
-
-
-                    driver1 = new FirefoxDriver(profile);
-                    driver1.Manage().Window.Size = new Size(300, 200);
-
-                    driver2 = new FirefoxDriver(profile);
-                    driver2.Manage().Window.Size = new Size(300, 200);
-
-                    driver3 = new FirefoxDriver(profile);
-                    driver3.Manage().Window.Size = new Size(300, 200);
-
-          
-
                     //each proxy browe 3 categories and 2 webpages
                       // look at a category 
                     {
                         thisCate = allCate[rnd1.Next(allCate.Length)];
+                        driver1 = new FirefoxDriver(profile);
+                        driver1.Manage().Window.Size = new Size(300, 200);
                         driver1.Navigate().GoToUrl(thisCate);
                         driver1.Close();
                     }
@@ -79,18 +62,24 @@ namespace AutoBrowseWeb
                     Thread.Sleep(2000); // then look at a page
                     {
                         thisPage = allweb[rnd1.Next(allweb.Length)];
+                        driver = new FirefoxDriver(profile);
+                        driver.Manage().Window.Size = new Size(300, 200);
                         driver.Navigate().GoToUrl(thisPage);
                         driver.Close();
                     }
                     Thread.Sleep(8000); // and then back to a category
                     {
                         thisCate = allCate[rnd1.Next(allCate.Length)];
+                        driver2 = new FirefoxDriver(profile);
+                        driver2.Manage().Window.Size = new Size(300, 200);
                         driver2.Navigate().GoToUrl(thisCate);
                         driver2.Close();
                     }
                     Thread.Sleep(3000);// and then back to a category again 
                     {
                         thisCate = allCate[rnd1.Next(allCate.Length)];
+                        driver3 = new FirefoxDriver(profile);
+                        driver3.Manage().Window.Size = new Size(300, 200);
                         driver3.Navigate().GoToUrl(thisCate);
                         driver3.Close();
                     }
@@ -98,6 +87,8 @@ namespace AutoBrowseWeb
                     Thread.Sleep(10000); // finally look at one more page
                     {
                         thisPage = allweb[rnd1.Next(allweb.Length)];
+                        driver0 = new FirefoxDriver(profile);
+                        driver0.Manage().Window.Size = new Size(300, 200);
                         driver0.Navigate().GoToUrl(thisPage);
                         driver0.Close();
                     }
