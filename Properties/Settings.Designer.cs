@@ -82,5 +82,53 @@ namespace AutoBrowseWeb.Properties {
                 this["proxies"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("2")]
+        public int Iterval1 {
+            get {
+                return ((int)(this["Iterval1"]));
+            }
+            set {
+                this["Iterval1"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("3")]
+        public int Iterval2 {
+            get {
+                return ((int)(this["Iterval2"]));
+            }
+            set {
+                this["Iterval2"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("3")]
+        public int Iterval3 {
+            get {
+                return ((int)(this["Iterval3"]));
+            }
+            set {
+                this["Iterval3"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("2")]
+        public int Iterval4 {
+            get {
+                return ((int)(this["Iterval4"]));
+            }
+            set {
+                this["Iterval4"] = value;
+            }
+        }
     }
 }

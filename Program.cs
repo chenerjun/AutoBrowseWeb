@@ -36,6 +36,12 @@ namespace AutoBrowseWeb
             FirefoxDriver driver, driver0, driver2, driver1, driver3;
 
             OpenQA.Selenium.Proxy proxy = new OpenQA.Selenium.Proxy();
+
+            FirefoxBinary binary = new FirefoxBinary("C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe");
+             
+            TimeSpan timespan = new TimeSpan();
+            timespan = TimeSpan.FromMinutes(3);
+
             while (true)
             {
 
@@ -57,7 +63,7 @@ namespace AutoBrowseWeb
                         driver1.Close();
                     }
 
-                    Thread.Sleep(2000); // then look at a page
+                    Thread.Sleep(1000*Properties.Settings.Default.Iterval1); // then look at a page
                     {
                         thisPage = allweb[rnd1.Next(allweb.Length)];
                         driver = new FirefoxDriver( profile);
@@ -65,7 +71,7 @@ namespace AutoBrowseWeb
                         driver.Navigate().GoToUrl(thisPage);
                         driver.Close();
                     }
-                    Thread.Sleep(8000); // and then back to a category
+                    Thread.Sleep(1000 * Properties.Settings.Default.Iterval2); // and then back to a category
                     {
                         thisCate = allCate[rnd1.Next(allCate.Length)];
                         driver2 = new FirefoxDriver(profile);
@@ -73,7 +79,7 @@ namespace AutoBrowseWeb
                         driver2.Navigate().GoToUrl(thisCate);
                         driver2.Close();
                     }
-                    Thread.Sleep(3000);// and then back to a category again 
+                    Thread.Sleep(1000 * Properties.Settings.Default.Iterval3);// and then back to a category again 
                     {
                         thisCate = allCate[rnd1.Next(allCate.Length)];
                         driver3 = new FirefoxDriver( profile);
@@ -82,7 +88,7 @@ namespace AutoBrowseWeb
                         driver3.Close();
                     }
 
-                    Thread.Sleep(10000); // finally look at one more page
+                    Thread.Sleep(1000 * Properties.Settings.Default.Iterval4); // finally look at one more page
                     {
                         thisPage = allweb[rnd1.Next(allweb.Length)];
                         driver0 = new FirefoxDriver(profile);
