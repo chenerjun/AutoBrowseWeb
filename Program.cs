@@ -20,20 +20,23 @@ namespace AutoBrowseWeb
             string web = Properties.Settings.Default.page;
             string cate = Properties.Settings.Default.cate;
             string proxies = Properties.Settings.Default.proxies;
+            string psearch = Properties.Settings.Default.psearch;
             string[] allweb = File.ReadAllLines(web);
             string[] allCate = File.ReadAllLines(cate);
             string[] allproxy = File.ReadAllLines(proxies);
+            string[] allsearch = File.ReadAllLines(psearch);
 
             Random rnd1 = new Random();
 
             string thisPage = "";
             string thisCate = "";
+            string thissearch = "";
             string PROXY = "";
 
 
             //Code copied from the above linkss
             FirefoxProfile profile = new FirefoxProfile();
-            FirefoxDriver driver, driver0, driver2, driver1, driver3;
+            FirefoxDriver driver, driver0, driver2, driver1, driver3, driver5;
 
             OpenQA.Selenium.Proxy proxy = new OpenQA.Selenium.Proxy();
 
@@ -56,24 +59,37 @@ namespace AutoBrowseWeb
                     //each proxy browe 3 categories and 2 webpages
                       // look at a category 
                     {
-                        thisCate = allCate[rnd1.Next(allCate.Length)];
+                        //thisCate = allCate[rnd1.Next(allCate.Length)];
+                        thisPage = allweb[rnd1.Next(allweb.Length)];
                         driver1 = new FirefoxDriver( profile);   
                         driver1.Manage().Window.Size = new Size(300, 200);
                         driver1.Navigate().GoToUrl(thisPage);  //   如果要扫目录就改成 thisCate
                         driver1.Close();
                     }
 
+                    ///  search
                     Thread.Sleep(1000*Properties.Settings.Default.Iterval1); // then look at a page
                     {
+                        thissearch = allsearch[rnd1.Next(allsearch.Length)];
+                        driver5 = new FirefoxDriver( profile);
+                        driver5.Manage().Window.Size = new Size(300, 200);
+                        driver5.Navigate().GoToUrl(thissearch); //   如果要扫目录就改成 thisCate
+                        driver5.Close();
+                    }
+
+                    Thread.Sleep(1000 * Properties.Settings.Default.Iterval1); // then look at a page
+                    {
                         thisPage = allweb[rnd1.Next(allweb.Length)];
-                        driver = new FirefoxDriver( profile);
+                        driver = new FirefoxDriver(profile);
                         driver.Manage().Window.Size = new Size(300, 200);
                         driver.Navigate().GoToUrl(thisPage); //   如果要扫目录就改成 thisCate
                         driver.Close();
                     }
+
                     Thread.Sleep(1000 * Properties.Settings.Default.Iterval2); // and then back to a category
                     {
-                        thisCate = allCate[rnd1.Next(allCate.Length)];
+                        //thisCate = allCate[rnd1.Next(allCate.Length)];
+                        thisPage = allweb[rnd1.Next(allweb.Length)];
                         driver2 = new FirefoxDriver(profile);
                         driver2.Manage().Window.Size = new Size(300, 200);
                         driver2.Navigate().GoToUrl(thisPage);//   如果要扫目录就改成 thisCate
@@ -81,7 +97,8 @@ namespace AutoBrowseWeb
                     }
                     Thread.Sleep(1000 * Properties.Settings.Default.Iterval3);// and then back to a category again 
                     {
-                        thisCate = allCate[rnd1.Next(allCate.Length)];
+                        //thisCate = allCate[rnd1.Next(allCate.Length)];
+                        thisPage = allweb[rnd1.Next(allweb.Length)];
                         driver3 = new FirefoxDriver( profile);
                         driver3.Manage().Window.Size = new Size(300, 200);
                         driver3.Navigate().GoToUrl(thisPage);//   如果要扫目录就改成 thisCate

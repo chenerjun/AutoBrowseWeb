@@ -29,5 +29,8 @@
     <Setting Name="Iterval4" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">2</Value>
     </Setting>
+    <Setting Name="psearch" Type="System.String" Scope="User">
+      <Value Profile="(Default)">psearch.txt</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

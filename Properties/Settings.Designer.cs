@@ -130,5 +130,17 @@ namespace AutoBrowseWeb.Properties {
                 this["Iterval4"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("psearch.txt")]
+        public string psearch {
+            get {
+                return ((string)(this["psearch"]));
+            }
+            set {
+                this["psearch"] = value;
+            }
+        }
     }
 }

@@ -77,17 +77,59 @@ start firefox https://ramapi.kidshelpphone.ca/api/v2/resource/topcategory/json/9
 start firefox https://ramapi.kidshelpphone.ca/api/v2/resource/topcategory/json/9BB1408A-81DD-43D1-B621-83E2F71D2669/en/7
 start firefox https://ramapi.kidshelpphone.ca/api/v2/resource/topcategory/json/9BB1408A-81DD-43D1-B621-83E2F71D2669/en/8
 
-start firefox https://ramapi.kidshelpphone.ca/api/v2/resource/kws/json/9BB1408A-81DD-43D1-B621-83E2F71D2669/en/Drugs
-start firefox https://ramapi.kidshelpphone.ca/api/v2/resource/kws/json/9BB1408A-81DD-43D1-B621-83E2F71D2669/en/Lesbian
-start firefox https://ramapi.kidshelpphone.ca/api/v2/resource/kws/json/9BB1408A-81DD-43D1-B621-83E2F71D2669/en/Alcohol
-start firefox https://ramapi.kidshelpphone.ca/api/v2/resource/kws/json/9BB1408A-81DD-43D1-B621-83E2F71D2669/en/Smoking
-start firefox https://ramapi.kidshelpphone.ca/api/v2/resource/kws/json/9BB1408A-81DD-43D1-B621-83E2F71D2669/en/Sexual
-start firefox https://ramapi.kidshelpphone.ca/api/v2/resource/kws/json/9BB1408A-81DD-43D1-B621-83E2F71D2669/en/Rape
-start firefox https://ramapi.kidshelpphone.ca/api/v2/resource/kws/json/9BB1408A-81DD-43D1-B621-83E2F71D2669/en/Birth
-start firefox https://ramapi.kidshelpphone.ca/api/v2/resource/kws/json/9BB1408A-81DD-43D1-B621-83E2F71D2669/en/control
-start firefox https://ramapi.kidshelpphone.ca/api/v2/resource/kws/json/9BB1408A-81DD-43D1-B621-83E2F71D2669/en/Birth%20control
-start firefox https://ramapi.kidshelpphone.ca/api/v2/resource/kws/json/9BB1408A-81DD-43D1-B621-83E2F71D2669/en/pill
-start firefox https://ramapi.kidshelpphone.ca/api/v2/resource/kws/json/9BB1408A-81DD-43D1-B621-83E2F71D2669/en/Pill%20condom
-start firefox https://ramapi.kidshelpphone.ca/api/v2/resource/kws/json/9BB1408A-81DD-43D1-B621-83E2F71D2669/en/contraception
-start firefox https://ramapi.kidshelpphone.ca/api/v2/resource/kws/json/9BB1408A-81DD-43D1-B621-83E2F71D2669/en/Anxiety
-start firefox https://ramapi.kidshelpphone.ca/api/v2/resource/kws/json/9BB1408A-81DD-43D1-B621-83E2F71D2669/en/Concern
+
+https://ramapi.kidshelpphone.ca/api/v2/resource/kws/json/9BB1408A-81DD-43D1-B621-83E2F71D2669/en/Drugs
+https://ramapi.kidshelpphone.ca/api/v2/resource/kws/json/9BB1408A-81DD-43D1-B621-83E2F71D2669/en/Lesbian
+https://ramapi.kidshelpphone.ca/api/v2/resource/kws/json/9BB1408A-81DD-43D1-B621-83E2F71D2669/en/Alcohol
+https://ramapi.kidshelpphone.ca/api/v2/resource/kws/json/9BB1408A-81DD-43D1-B621-83E2F71D2669/en/Smoking
+https://ramapi.kidshelpphone.ca/api/v2/resource/kws/json/9BB1408A-81DD-43D1-B621-83E2F71D2669/en/Sexual
+https://ramapi.kidshelpphone.ca/api/v2/resource/kws/json/9BB1408A-81DD-43D1-B621-83E2F71D2669/en/Rape
+https://ramapi.kidshelpphone.ca/api/v2/resource/kws/json/9BB1408A-81DD-43D1-B621-83E2F71D2669/en/Birth
+https://ramapi.kidshelpphone.ca/api/v2/resource/kws/json/9BB1408A-81DD-43D1-B621-83E2F71D2669/en/control
+https://ramapi.kidshelpphone.ca/api/v2/resource/kws/json/9BB1408A-81DD-43D1-B621-83E2F71D2669/en/Birth%20control
+https://ramapi.kidshelpphone.ca/api/v2/resource/kws/json/9BB1408A-81DD-43D1-B621-83E2F71D2669/en/pill
+https://ramapi.kidshelpphone.ca/api/v2/resource/kws/json/9BB1408A-81DD-43D1-B621-83E2F71D2669/en/Pill%20condom
+https://ramapi.kidshelpphone.ca/api/v2/resource/kws/json/9BB1408A-81DD-43D1-B621-83E2F71D2669/en/contraception
+https://ramapi.kidshelpphone.ca/api/v2/resource/kws/json/9BB1408A-81DD-43D1-B621-83E2F71D2669/en/Anxiety
+https://ramapi.kidshelpphone.ca/api/v2/resource/kws/json/9BB1408A-81DD-43D1-B621-83E2F71D2669/en/Concern
+https://ramapi.kidshelpphone.ca/api/v2/resource/kws/json/9BB1408A-81DD-43D1-B621-83E2F71D2669/en/infection
+https://ramapi.kidshelpphone.ca/api/v2/resource/kws/json/9BB1408A-81DD-43D1-B621-83E2F71D2669/en/SDT
+https://ramapi.kidshelpphone.ca/api/v2/resource/kws/json/9BB1408A-81DD-43D1-B621-83E2F71D2669/en/Disorders
+https://ramapi.kidshelpphone.ca/api/v2/resource/kws/json/9BB1408A-81DD-43D1-B621-83E2F71D2669/en/Alimentaire
+https://ramapi.kidshelpphone.ca/api/v2/resource/kws/json/9BB1408A-81DD-43D1-B621-83E2F71D2669/en/Bulimia
+https://ramapi.kidshelpphone.ca/api/v2/resource/kws/json/9BB1408A-81DD-43D1-B621-83E2F71D2669/en/Anorexia
+https://ramapi.kidshelpphone.ca/api/v2/resource/kws/json/9BB1408A-81DD-43D1-B621-83E2F71D2669/en/Injury
+https://ramapi.kidshelpphone.ca/api/v2/resource/kws/json/9BB1408A-81DD-43D1-B621-83E2F71D2669/en/Harm
+https://ramapi.kidshelpphone.ca/api/v2/resource/kws/json/9BB1408A-81DD-43D1-B621-83E2F71D2669/en/Distress
+https://ramapi.kidshelpphone.ca/api/v2/resource/kws/json/9BB1408A-81DD-43D1-B621-83E2F71D2669/en/Crisis
+https://ramapi.kidshelpphone.ca/api/v2/resource/kws/json/9BB1408A-81DD-43D1-B621-83E2F71D2669/en/Employment
+https://ramapi.kidshelpphone.ca/api/v2/resource/kws/json/9BB1408A-81DD-43D1-B621-83E2F71D2669/en/Job
+https://ramapi.kidshelpphone.ca/api/v2/resource/kws/json/9BB1408A-81DD-43D1-B621-83E2F71D2669/en/Work
+https://ramapi.kidshelpphone.ca/api/v2/resource/kws/json/9BB1408A-81DD-43D1-B621-83E2F71D2669/en/loss
+https://ramapi.kidshelpphone.ca/api/v2/resource/kws/json/9BB1408A-81DD-43D1-B621-83E2F71D2669/en/Bereavement
+https://ramapi.kidshelpphone.ca/api/v2/resource/kws/json/9BB1408A-81DD-43D1-B621-83E2F71D2669/en/abuse
+https://ramapi.kidshelpphone.ca/api/v2/resource/kws/json/9BB1408A-81DD-43D1-B621-83E2F71D2669/en/violence
+https://ramapi.kidshelpphone.ca/api/v2/resource/kws/json/9BB1408A-81DD-43D1-B621-83E2F71D2669/en/LGBTQ
+https://ramapi.kidshelpphone.ca/api/v2/resource/kws/json/9BB1408A-81DD-43D1-B621-83E2F71D2669/en/Lesbian
+https://ramapi.kidshelpphone.ca/api/v2/resource/kws/json/9BB1408A-81DD-43D1-B621-83E2F71D2669/en/Gay
+https://ramapi.kidshelpphone.ca/api/v2/resource/kws/json/9BB1408A-81DD-43D1-B621-83E2F71D2669/en/Bisexual
+https://ramapi.kidshelpphone.ca/api/v2/resource/kws/json/9BB1408A-81DD-43D1-B621-83E2F71D2669/en/Pansexual
+https://ramapi.kidshelpphone.ca/api/v2/resource/kws/json/9BB1408A-81DD-43D1-B621-83E2F71D2669/en/Abuse
+https://ramapi.kidshelpphone.ca/api/v2/resource/kws/json/9BB1408A-81DD-43D1-B621-83E2F71D2669/en/excessive
+https://ramapi.kidshelpphone.ca/api/v2/resource/kws/json/9BB1408A-81DD-43D1-B621-83E2F71D2669/en/shelter
+https://ramapi.kidshelpphone.ca/api/v2/resource/kws/json/9BB1408A-81DD-43D1-B621-83E2F71D2669/en/centre
+https://ramapi.kidshelpphone.ca/api/v2/resource/kws/json/9BB1408A-81DD-43D1-B621-83E2F71D2669/en/shelter
+https://ramapi.kidshelpphone.ca/api/v2/resource/kws/json/9BB1408A-81DD-43D1-B621-83E2F71D2669/en/Logement
+https://ramapi.kidshelpphone.ca/api/v2/resource/kws/json/9BB1408A-81DD-43D1-B621-83E2F71D2669/en/Condoms
+https://ramapi.kidshelpphone.ca/api/v2/resource/kws/json/9BB1408A-81DD-43D1-B621-83E2F71D2669/en/pilule
+https://ramapi.kidshelpphone.ca/api/v2/resource/kws/json/9BB1408A-81DD-43D1-B621-83E2F71D2669/en/anovulants
+https://ramapi.kidshelpphone.ca/api/v2/resource/kws/json/9BB1408A-81DD-43D1-B621-83E2F71D2669/en/Welfare
+https://ramapi.kidshelpphone.ca/api/v2/resource/kws/json/9BB1408A-81DD-43D1-B621-83E2F71D2669/en/Allocations
+https://ramapi.kidshelpphone.ca/api/v2/resource/kws/json/9BB1408A-81DD-43D1-B621-83E2F71D2669/en/counselling
+https://ramapi.kidshelpphone.ca/api/v2/resource/kws/json/9BB1408A-81DD-43D1-B621-83E2F71D2669/en/Anxiety
+https://ramapi.kidshelpphone.ca/api/v2/resource/kws/json/9BB1408A-81DD-43D1-B621-83E2F71D2669/en/Stress
+https://ramapi.kidshelpphone.ca/api/v2/resource/kws/json/9BB1408A-81DD-43D1-B621-83E2F71D2669/en/Anxieux
+https://ramapi.kidshelpphone.ca/api/v2/resource/kws/json/9BB1408A-81DD-43D1-B621-83E2F71D2669/en/Depression
+https://ramapi.kidshelpphone.ca/api/v2/resource/kws/json/9BB1408A-81DD-43D1-B621-83E2F71D2669/en/Sadness
+https://ramapi.kidshelpphone.ca/api/v2/resource/kws/json/9BB1408A-81DD-43D1-B621-83E2F71D2669/en/Tristesse
+https://ramapi.kidshelpphone.ca/api/v2/resource/kws/json/9BB1408A-81DD-43D1-B621-83E2F71D2669/en/Mental
