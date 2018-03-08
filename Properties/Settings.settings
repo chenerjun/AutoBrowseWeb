@@ -32,5 +32,8 @@
     <Setting Name="psearch" Type="System.String" Scope="User">
       <Value Profile="(Default)">psearch.txt</Value>
     </Setting>
+    <Setting Name="Firefoxbin" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

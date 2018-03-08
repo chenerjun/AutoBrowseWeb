@@ -142,5 +142,17 @@ namespace AutoBrowseWeb.Properties {
                 this["psearch"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("C:\\\\Program Files (x86)\\\\Mozilla Firefox\\\\firefox.exe")]
+        public string Firefoxbin {
+            get {
+                return ((string)(this["Firefoxbin"]));
+            }
+            set {
+                this["Firefoxbin"] = value;
+            }
+        }
     }
 }

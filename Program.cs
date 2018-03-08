@@ -40,8 +40,10 @@ namespace AutoBrowseWeb
 
             OpenQA.Selenium.Proxy proxy = new OpenQA.Selenium.Proxy();
 
-            FirefoxBinary binary = new FirefoxBinary("C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe");
-             
+            FirefoxBinary binary = new FirefoxBinary(Properties.Settings.Default.Firefoxbin);  
+            //"C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe
+
+
             TimeSpan timespan = new TimeSpan();
             timespan = TimeSpan.FromMinutes(3);
 
@@ -88,11 +90,11 @@ namespace AutoBrowseWeb
 
                     Thread.Sleep(1000 * Properties.Settings.Default.Iterval2); // and then back to a category
                     {
-                        //thisCate = allCate[rnd1.Next(allCate.Length)];
-                        thisPage = allweb[rnd1.Next(allweb.Length)];
+                        thisCate = allCate[rnd1.Next(allCate.Length)];
+                        //thisPage = allweb[rnd1.Next(allweb.Length)];
                         driver2 = new FirefoxDriver(profile);
                         driver2.Manage().Window.Size = new Size(300, 200);
-                        driver2.Navigate().GoToUrl(thisPage);//   如果要扫目录就改成 thisCate
+                        driver2.Navigate().GoToUrl(thisCate);//   如果要扫目录就改成 thisCate
                         driver2.Close();
                     }
                     Thread.Sleep(1000 * Properties.Settings.Default.Iterval3);// and then back to a category again 
