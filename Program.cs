@@ -62,10 +62,10 @@ namespace AutoBrowseWeb
                       // look at a category 
                     {
                         //thisCate = allCate[rnd1.Next(allCate.Length)];
-                        thisPage = allweb[rnd1.Next(allweb.Length)];
+                        thisPage = allweb[rnd1.Next(allCate.Length)];
                         driver1 = new FirefoxDriver( profile);   
                         driver1.Manage().Window.Size = new Size(300, 200);
-                        driver1.Navigate().GoToUrl(thisPage);  //   如果要扫目录就改成 thisCate
+                        driver1.Navigate().GoToUrl(thisCate);  //   Category 如果要扫目录就改成 thisCate
                         driver1.Close();
                     }
 
@@ -75,7 +75,7 @@ namespace AutoBrowseWeb
                         thissearch = allsearch[rnd1.Next(allsearch.Length)];
                         driver5 = new FirefoxDriver( profile);
                         driver5.Manage().Window.Size = new Size(300, 200);
-                        driver5.Navigate().GoToUrl(thissearch); //   如果要扫目录就改成 thisCate
+                        driver5.Navigate().GoToUrl(thissearch); //   Search  如果要扫目录就改成 thisCate
                         driver5.Close();
                     }
 
@@ -84,7 +84,7 @@ namespace AutoBrowseWeb
                         thisPage = allweb[rnd1.Next(allweb.Length)];
                         driver = new FirefoxDriver(profile);
                         driver.Manage().Window.Size = new Size(300, 200);
-                        driver.Navigate().GoToUrl(thisPage); //   如果要扫目录就改成 thisCate
+                        driver.Navigate().GoToUrl(thisPage); //   Page 如果要扫目录就改成 thisCate
                         driver.Close();
                     }
 
@@ -94,7 +94,7 @@ namespace AutoBrowseWeb
                         //thisPage = allweb[rnd1.Next(allweb.Length)];
                         driver2 = new FirefoxDriver(profile);
                         driver2.Manage().Window.Size = new Size(300, 200);
-                        driver2.Navigate().GoToUrl(thisCate);//   如果要扫目录就改成 thisCate
+                        driver2.Navigate().GoToUrl(thisCate);//   Category 如果要扫目录就改成 thisCate
                         driver2.Close();
                     }
                     Thread.Sleep(1000 * Properties.Settings.Default.Iterval3);// and then back to a category again 
@@ -103,7 +103,7 @@ namespace AutoBrowseWeb
                         thisPage = allweb[rnd1.Next(allweb.Length)];
                         driver3 = new FirefoxDriver( profile);
                         driver3.Manage().Window.Size = new Size(300, 200);
-                        driver3.Navigate().GoToUrl(thisPage);//   如果要扫目录就改成 thisCate
+                        driver3.Navigate().GoToUrl(thisPage);//   Page 如果要扫目录就改成 thisCate
                         driver3.Close();
                     }
 
@@ -112,7 +112,7 @@ namespace AutoBrowseWeb
                         thisPage = allweb[rnd1.Next(allweb.Length)];
                         driver0 = new FirefoxDriver(profile);
                         driver0.Manage().Window.Size = new Size(300, 200);
-                        driver0.Navigate().GoToUrl(thisPage);//   如果要扫目录就改成 thisCate
+                        driver0.Navigate().GoToUrl(thisPage);//   Page 如果要扫目录就改成 thisCate
                         driver0.Close();
                     }
 
